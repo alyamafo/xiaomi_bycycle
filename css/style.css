@@ -36,6 +36,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 600;
 }
 
 .menu{
@@ -65,9 +66,15 @@ transition: all .6s;
     padding: 100px 0 150px;
 }
 
+
 .bike__inner{
     display: flex;
     justify-content: space-between;
+    font-weight: 500;
+}
+
+.bike__column{
+    width: 630px;
 }
 
 .bike__column-slider{
@@ -112,9 +119,58 @@ transition: all .6s;
 
 .bike-slider .slick-dots{
     right: 0;
+    top: 50px;
 }
 
 .slick-dots{
-    position: absolute;
-    top: 0;
+    position: absolute
+}
+
+.slick-dots li + li{
+    padding-top: 10px;
+}
+
+.slick-dots button{
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-color: #131313;
+    width: 2px;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.slick-dots button:hover,
+.slick-active button{
+    background-color: #ff4040;
+}
+
+.bike__list{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.bike__list-item{
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 40px;
+    
+}
+
+.bike__list-num{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bike__list-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    margin: auto 0;
 }
